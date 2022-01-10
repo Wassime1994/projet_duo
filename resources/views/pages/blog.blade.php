@@ -1,5 +1,8 @@
 @extends('layouts.index')
 @section('content')
+<div>
+    <a href={{route('blog_form')}}>DASHBOARD BLOG</a>
+</div>
 
 <main id="main" class="site-main">
 
@@ -10,6 +13,9 @@
             <div class="text-center">
 
                 <h1 class="section-title-big">Blog</h1>
+                <div>
+                    <a href={{route('blog_form')}}>DASHBOARD BLOG</a>
+                </div>
                 <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
             </div>

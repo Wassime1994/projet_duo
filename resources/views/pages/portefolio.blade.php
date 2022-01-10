@@ -8,6 +8,9 @@
         <div class="container">
             <h1 class="section-title-big text-center">Portfolio</h1>
         </div>
+        <div>
+            <a href={{route("portefolio_form")}}>DASHBOARD PORTEFOLIO</a>
+        </div>
 
         <div class="container-fluid">
             <div class="row" id="grid">
