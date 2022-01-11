@@ -1,4 +1,4 @@
-<form action="/admin/blog/store" method="POST">
+<form action={{route('blog_store')}} method="POST">
     @csrf
     <label for="nom"> Image : </label>
     <input type="text" name="image"> <br>

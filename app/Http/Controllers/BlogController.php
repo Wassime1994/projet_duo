@@ -19,6 +19,6 @@ class BlogController extends Controller
         $table->image=$request->image ;
         $table->description=$request->description ;
         $table->save() ;
-        redirect()->route('home') ;
+        return redirect()->route('home') ;
     }
 }

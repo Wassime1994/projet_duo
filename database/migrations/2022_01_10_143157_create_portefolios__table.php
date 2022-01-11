@@ -13,7 +13,7 @@ class CreatePortefoliosTable extends Migration
      */
     public function up()
     {
-        Schema::create('portefolios_', function (Blueprint $table) {
+        Schema::create('portefolios', function (Blueprint $table) {
             $table->id();
             $table->string('titre',50);
             $table->longText("description");

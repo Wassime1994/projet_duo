@@ -34,7 +34,7 @@ Route::get('/admin/portefolio',[PorteFolioController::class,"create"])->name('po
 
 // Post
 Route::post('/admin/blog/store',[BlogController::class,"store"])->name('blog_store') ;
-Route::post('/admin/blog/store',[PorteFolioController::class,"store"])->name('portefolio_store');
+Route::post('/admin/portefolio/store',[PorteFolioController::class,"store"])->name('portefolio_store');
 
 
 
