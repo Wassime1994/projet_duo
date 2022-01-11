@@ -24,17 +24,15 @@ Route::get('/blog',[FrontController::class,'blog'])->name('blog');
 Route::get('/portefolio', [FrontController::class ,"portefolio"])->name('portefolio');
 Route::get('/contact', [FrontController::class,"contact"])->name('contact');
 Route::get('/admin',[FrontController::class,"dashboard"])->name('dash');
-// Get
+
+// afficher
 Route::get('/admin/dashboard/blog', [BlogController::class,"index"])->name('blog_form');
 Route::get('/admin/dashboard/portefolio',[PorteFolioController::class,"index"])->name('portefolio_form');
-
-
-
-// Post
+// Get
 Route::get('/admin/blog',[BlogController::class,"create"])->name('blog_create');
 Route::get('/admin/portefolio',[PorteFolioController::class,"create"])->name('portefolio_create');
 
-
+// Post
 Route::post('/admin/blog/store',[BlogController::class,"store"])->name('blog_store') ;
 Route::post('/admin/blog/store',[PorteFolioController::class,"store"])->name('portefolio_store');
 

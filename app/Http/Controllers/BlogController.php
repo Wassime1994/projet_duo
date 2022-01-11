@@ -13,7 +13,7 @@ class BlogController extends Controller
     public function create () {
         return view('admin.blog')  ;
     }
-    public function store(Request $request){
+    public function store (Request $request){
         $table= new Blog();
         $table->titre=$request->titre ;
         $table->image=$request->image ;
