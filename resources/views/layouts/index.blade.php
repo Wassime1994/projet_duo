@@ -73,7 +73,6 @@
                         </li>
                     </li>
                     <li>
-                        <a href={{route('dash')}}>DashBoard</a>
                     </li>
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.navbar-collapse -->
