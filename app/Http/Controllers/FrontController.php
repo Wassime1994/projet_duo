@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -16,7 +17,8 @@ class FrontController extends Controller
         return view('pages.contact');
     }
      public function blog () {
-        return view('pages.blog');
+         $table=Blog::all();
+        return view('pages.blog',compact('table'));
     }
     public function dashboard () {
         return view('admin.dashboard');

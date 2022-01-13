@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 class BlogController extends Controller
 {
     public function index() {
+        $table=Blog::all() ;
         return view('admin.blog');
     }
     public function create () {
