@@ -73,7 +73,7 @@
                         </li>
                     </li>
                     <li>
-                        <a href={{route('dash')}}>DashBoard</a>
+                        <a href={{route('blog.change')}}>DashBoard</a>
                     </li>
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.navbar-collapse -->

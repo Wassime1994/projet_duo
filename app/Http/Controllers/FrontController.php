@@ -21,6 +21,6 @@ class FrontController extends Controller
         return view('pages.blog',compact('table'));
     }
     public function dashboard () {
-        return view('admin.dashboard');
+        return view('admin.blog_modif');
     }
 }

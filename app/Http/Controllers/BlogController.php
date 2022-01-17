@@ -22,4 +22,9 @@ class BlogController extends Controller
         $table->save() ;
         return redirect()->route('home') ;
     }
+
+    public function modif () {
+        $tableblog=Blog::all() ;
+        return view('admin.blog_modif' , compact('tableblog')) ;
+    }
 }

@@ -20,4 +20,8 @@ class PorteFolioController extends Controller
         $table->save() ;
         return redirect()->route('home') ;
     }
+    public function modif () {
+        $table=Portefolio::all() ;
+        return view('admin.portefolio_modif' , compact('table')) ;
+    }
 }

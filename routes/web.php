@@ -36,6 +36,10 @@ Route::get('/admin/portefolio',[PorteFolioController::class,"create"])->name('po
 Route::post('/admin/blog/store',[BlogController::class,"store"])->name('blog_store') ;
 Route::post('/admin/portefolio/store',[PorteFolioController::class,"store"])->name('portefolio_store');
 
+// ROUTES DASHBOARD BLOG ET PORTEFOLIO
+
+Route::get('/admin/blog/change', [BlogController::class , "modif"])->name('blog.change');
+Route::get('/admin/porteFolio/change', [PorteFolioController::class , "modif"])->name('portefolio.change');
 
 
 
