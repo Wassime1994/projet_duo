@@ -20,15 +20,15 @@ a:hover {
   color: #3B3A36;
 }
 
-/* 
- * Buttons 
+/*
+ * Buttons
  */
 .btn {
   color: #292a2c;
 }
 
 .btn-yellow {
-  background-color: #ffd500; 
+  background-color: #ffd500;
   color: #fff;
 }
 
@@ -53,8 +53,8 @@ a:hover {
 
 .btn.btn-yellow-border:hover,
 .btn.btn-yellow-border:focus {
-  background-color: #ffd500; 
-  color: #fff; 
+  background-color: #ffd500;
+  color: #fff;
 }
 
 .btn-gray-border {
@@ -63,11 +63,11 @@ a:hover {
 
 .btn.btn-gray-border:hover,
 .btn.btn-gray-border:focus {
-  background-color: #d5d5d5;  
+  background-color: #d5d5d5;
 }
 
-/* 
- * Forms 
+/*
+ * Forms
  */
 
  /* Input fields */
@@ -136,7 +136,7 @@ input[type=search] + button:focus {
 }
 
 .selectpicker-styled:hover,
-.selectpicker-styled:active, 
+.selectpicker-styled:active,
 .selectpicker-styled.active {
   border-color: #ffd500;
 }
@@ -147,7 +147,7 @@ input[type=search] + button:focus {
 
 .selectpicker-options li {
   border: 1px solid #ffd500;
-  border-top: 0; 
+  border-top: 0;
 }
 
 .selectpicker-options li:hover {
@@ -193,7 +193,7 @@ input[type=search] + button:focus {
 
 .accordion .panel-heading a.collapsed:hover,
 .accordion.accordion-gray .panel-heading a.collapsed:hover{
-  background-color: #ffd500;   
+  background-color: #ffd500;
 }
 
 .accordion .panel-heading a {
@@ -222,7 +222,7 @@ input[type=search] + button:focus {
 }
 
 .yellow-bg {
-  background-color: #ffd500;  
+  background-color: #ffd500;
 }
 
 .black-bg {
@@ -238,8 +238,8 @@ input[type=search] + button:focus {
 }
 
 a.white-text:hover {
-  color: #333; 
-} 
+  color: #333;
+}
 
 /* Text colors */
 .gray-text {
@@ -247,7 +247,7 @@ a.white-text:hover {
 }
 
 .yellow-text {
-  color: #ffd500;  
+  color: #ffd500;
 }
 
 .breadcrumb li a {
@@ -261,7 +261,7 @@ a.white-text:hover {
 /* Pagination */
 .pagination > li > a {
   color: #292a2c;
-  background-color: #f9f8f8;
+  background-color: orangered;
 }
 
 .pagination > li.active > a,
@@ -272,66 +272,66 @@ a.white-text:hover {
 }
 
 /* HEADER
-================================================== */
+/* ================================================== */
 .site-header {
-  background-color: rgba(59,58,54,0);
+  background-color: rgba(247, 199, 10, 0);
   border-bottom: 1px solid rgba(226,226,226,0);
-}
+} */
 
 .site-header-fill {
-  background-color: rgba(59,58,54,1);    
+  background-color: rgba(59,58,54,1);
   border-bottom: 1px solid rgba(226,226,226,1);
 }
 
 /* Site-logo */
 .site-title a:hover {
-  color: #fff;
+  color: pink;
 }
 
 .site-title.yellow-text:hover  {
-  color: #ffd500;   
+  color: #ffd500;
 }
 
 /* Navigation */
 .navbar-nav > li > a:hover,
 .navbar-nav > li.active > a,
 .navbar-collapse li a:hover,
-.dropdown.open > a, 
-.dropdown-menu a:hover, 
-.dropdown:hover > a, 
+.dropdown.open > a,
+.dropdown-menu a:hover,
+.dropdown:hover > a,
 .dropdown-menu>li>a:focus,
 .dropdown-menu li a:hover,
 .slicknav_nav li.active > a,
 .slicknav_nav .dropdown.active > a a,
 .slicknav_nav .active .active a {
-  color: #ffd500;  
+  color: #ffd500;
 }
 
 .slicknav_nav > li > a .slicknav_arrow {
-  color: #fff;
+  color: orange
 }
 
 .dropdown-menu li.active a,
 .dropdown-menu li.active a:hover {
   background-color: transparent;
-  color: #ffd500;    
+  color: #ffd500;
 }
 
 .navbar-nav > li > a:hover,
 .navbar-nav > li > a:focus,
-.nav .open > a, 
-.nav .open > a:focus, 
+.nav .open > a,
+.nav .open > a:focus,
 .nav .open > a:hover,
-.navbar-collapse li a:hover, 
-.dropdown-menu a:hover, 
-.dropdown:hover > a, 
+.navbar-collapse li a:hover,
+.dropdown-menu a:hover,
+.dropdown:hover > a,
 .dropdown-menu>li>a:focus,
 .dropdown-menu li a:hover  {
   background-color: transparent;
 }
 
 .dropdown-menu {
-  border-top: 5px solid #ffd500; 
+  border-top: 5px solid #ffd500;
 }
 
 /* HERO
@@ -345,7 +345,7 @@ a.white-text:hover {
 }
 
 .hero-arrow a:hover {
-  color: #ffd500; 
+  color: #ffd500;
 }
 
 /* SITEMAIN
@@ -372,7 +372,7 @@ a.white-text:hover {
 /* Section: Team */
 
 .team-member-position {
-  color: #ffd500; 
+  color: #ffd500;
 }
 
 .team-member-text {
@@ -414,7 +414,7 @@ a.white-text:hover {
   background-color: transparent;
 }
 
-/* Section: Social networks */ 
+/* Section: Social networks */
 .social-networks a:hover {
   color: #fff;
 }
@@ -427,8 +427,8 @@ a.white-text:hover {
  */
 .portfolio-sorting .active,
 .portfolio-sorting .btn:active {
-  background-color: #ffd500; 
-  border-color: #ffd500; 
+  background-color: #ffd500;
+  border-color: #ffd500;
   color: #fff;
 }
 
@@ -468,9 +468,9 @@ a.post-title:hover,
 
 .post-meta li a:hover {
   color: #ffd500;;
-} 
+}
 
-/* 
+/*
  * Sidebar
  */
 .widget-categories li a {
@@ -494,7 +494,7 @@ a.post-title:hover,
   color: #333;
 }
 
-/* Tags */ 
+/* Tags */
 .widget-tags ul li a {
   background-color: #f9f8f8;
   color: #292a2c;
@@ -546,7 +546,7 @@ a.post-title:hover,
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 767px) { 
+@media only screen and (max-width : 767px) {
   .nav-tabs {
     background-color: #eaeaea;
     border-bottom: none!important;
@@ -557,7 +557,7 @@ a.post-title:hover,
   }
 
   .nav-tabs.tab-style > li > a:hover {
-    border-bottom-color: #ffd500;   
+    border-bottom-color: #ffd500;
   }
 
   .slicknav_nav > li a {
