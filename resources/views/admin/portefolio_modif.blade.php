@@ -34,9 +34,12 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Other
+                <div class="bg-success btn btn-primary d-flex justify-content-center aligns-item-center">
+                    <button type="button" class="btn btn-success d-flex justify-content-center aligns-item-center">
+                        <a  class="nav-link text-white" href={{route("portefolio_form")}}>AJOUTER PORTE FOLIO</a>
+                        <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                     </button>
+                </div>
                 </a>
               </li>
             </ul>
@@ -53,9 +56,21 @@
                 <li>Titre :  {{$item->titre}}</li>
                 <li>Description : {{$item->description}}</li>
                 <ul class="d-flex list-unstyled" >
-                    <li ><button type="button" class="btn btn-primary">Edit</button></li>
-                    <li class="mx-3"><button type="button" class="btn btn-danger">Delete</button></li>
-                </ul>
+                    <li><button type="button" class="btn btn-primary">
+                        <a href={{route('portefolio.edit', $item->id)}} class="text-white">Edit</a>
+                        </button></li>
+                    <li class="mx-1"><button type="button" class="btn btn-warning">
+                        <a href={{route('portefolio.show',$item->id)}}>
+                         Infos
+                     </a>  </button>
+                 </li>
+                    <li class="mx-1">
+                        <form method="POST"action="{{route('portefolio.destroy', $item->id)}}" >
+                         @csrf
+                         @method('DELETE')
+                         <button class="btn btn-danger" type="submit">Delete</button>
+                         </form>
+                 </li>                </ul>
                 <hr>
             </ul>
             @empty
@@ -64,4 +79,6 @@
 
              {{-- {{dump($table)}} --}}
          </div>
+
+
 </div>
