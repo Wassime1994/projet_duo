@@ -36,7 +36,32 @@ Route::get('/admin/portefolio',[PorteFolioController::class,"create"])->name('po
 Route::post('/admin/blog/store',[BlogController::class,"store"])->name('blog_store') ;
 Route::post('/admin/portefolio/store',[PorteFolioController::class,"store"])->name('portefolio_store');
 
+// ROUTES DASHBOARD BLOG ET PORTEFOLIO
 
+Route::get('/admin/blog/change', [BlogController::class , "modif"])->name('blog.change');
+Route::get('/admin/porteFolio/change', [PorteFolioController::class , "modif"])->name('portefolio.change');
+
+
+// SUPPRIMER
+
+Route::delete('admin/blog/delete/{id}', [BlogController::class , "destroy"])->name('blog.destroy');
+Route::delete('admin/portefolio/delete/{id}', [PorteFolioController::class , "destroy"])->name('portefolio.destroy') ;
+
+//SHOW
+
+Route::get('/admin/blog/show/{id}', [BlogController::class , "show"])->name('blog.show');
+Route::get('/admin/porteFolio/show/{id}', [PorteFolioController::class , "show"])->name('portefolio.show');
+
+
+// Edit
+Route::get('/admin/blog/edit/{id}', [BlogController::class , "edit"])->name('blog.edit');
+Route::get('/admin/porteFolio/edit/{id}', [PorteFolioController::class , "edit"])->name('portefolio.edit');
+
+
+// Update
+
+Route::put('/admin/blog/update/{id}' ,[BlogController::class , "update"])->name('blog.update') ;
+Route::put('/admin/portefolio/update/{id}' ,[PorteFolioController::class , "update"])->name('portefolio.update') ;
 
 
 

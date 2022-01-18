@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Portefolio;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -11,7 +12,8 @@ class FrontController extends Controller
         return view('welcome');
     }
     public function portefolio () {
-        return view('pages.portefolio');
+        $data= Portefolio::all() ;
+        return view('pages.portefolio' , compact('data'));
     }
      public function contact () {
         return view('pages.contact');
@@ -21,6 +23,6 @@ class FrontController extends Controller
         return view('pages.blog',compact('table'));
     }
     public function dashboard () {
-        return view('admin.dashboard');
+        return view('admin.blog_modif');
     }
 }

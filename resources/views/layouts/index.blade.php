@@ -73,6 +73,10 @@
                         </li>
                     </li>
                     <li>
+<<<<<<< HEAD
+=======
+                        <a href={{route('blog.change')}}>DashBoard</a>
+>>>>>>> Wassime
                     </li>
                     </ul><!-- /.navbar-nav -->
                 </div><!-- /.navbar-collapse -->
